@@ -1,0 +1,14 @@
+use("platzi_store")
+
+db.products.updateOne({
+    // Field to identify the document
+    _id: 2
+},
+//change field => operators
+{
+    $set: {
+        name: "Change Name",
+        price: 3000,
+        tags: ['A', 'B', 'C']
+    }
+});

@@ -1,0 +1,12 @@
+use("platzi_store")
+
+db.products.updateOne({
+    // Field to identify the document
+    _id: ObjectId("6476a8276cfdd5a52c0e417d")
+},
+//change field => operators
+{
+    $inc: {
+        price: 100
+    }
+});
