@@ -1,0 +1,11 @@
+use("platzi_store")
+
+// Immplicit equal
+//db.inventory.find({ qty: 20 })
+// Explicit equal
+/* db.inventory.find({ qty: {
+    $eq: 20
+} 
+}); */
+//db.inventory.find({ "item.name": "ab" })
+db.inventory.find({ qty: { $ne: 20 } })
